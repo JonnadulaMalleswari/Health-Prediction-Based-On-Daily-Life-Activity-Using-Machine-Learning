@@ -23,14 +23,6 @@ def login_page():
         width: 400px;
         margin: auto;
     }
-
-    /* Align title and home icon */
-    div[data-testid="column"] h1 {
-        display: inline-block;
-        font-size: 28px;
-        vertical-align: middle;
-    }
-
     div[data-testid="column"] button {
         display: inline-block;
         vertical-align: middle;
