@@ -27,7 +27,6 @@ def login_page():
     /* Align title and home icon */
     div[data-testid="column"] h1 {
         font-size: 28px;
-        vertical-align: middle;
     }
 
     </style>
