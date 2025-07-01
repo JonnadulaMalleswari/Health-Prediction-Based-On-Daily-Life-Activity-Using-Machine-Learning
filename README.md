@@ -1,6 +1,11 @@
 # 🩺Health-Prediction-Based-On-Daily-Life-Activity-Using-Machine-Learning
 This project uses Machine Learning to predict a person’s health risk level based on their daily activity patterns such as step count, heart rate, and sleep hours. By applying unsupervised clustering techniques like K-Means and Agglomerative Clustering, the model groups users into three health categories like Normal,Mild and Severe. It helps users understand their overall lifestyle health and take preventive actions early.
 
+## 🔗Live Demo
+
+👉 [![Click here to open the deployed Streamlit app](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://health-prediction-based-on-life-activity-using-machine-learning.streamlit.app/)
+
+
 ## 🧠Problem Statement
 Most existing systems focus only on specific illnesses and ignore key health indicators like blood pressure, stress, and heart activity. This limits their ability to give a complete view of a person’s well-being.
 This project aims to build a smarter, more comprehensive health prediction system. It analyzes multiple health parameters together to identify risk levels and give users actionable insights. 
