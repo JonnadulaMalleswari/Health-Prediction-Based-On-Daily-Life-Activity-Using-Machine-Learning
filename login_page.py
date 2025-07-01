@@ -23,6 +23,11 @@ def login_page():
         width: 400px;
         margin: auto;
     }
+    
+    /* Align title and home icon */
+    div[data-testid="column"] h1 {
+        font-size: 28px;
+    }
 
     </style>
     """,
@@ -32,10 +37,10 @@ def login_page():
 
   
     
-    col1,col2,col3 = st.columns([2,5,1])
+    col1,col2,col3 = st.columns([2,5,3])
     with col2.form(key="login_form"):
         # Title
-        col1,col2=st.columns([5,3])
+        col1,col2=st.columns([5,4])
         col1.title("Login Here !!!")
         if col2.form_submit_button("🏚️"):
             navigate_to_page("home")
@@ -44,7 +49,7 @@ def login_page():
         email = st.text_input("Email")
         password = st.text_input("Password", type="password")
         # Submit button inside the form
-        col1,col2=st.columns([1,2])
+        col1,col2=st.columns([1,3])
         with col1:
             if st.form_submit_button("Login 🔐",type='primary'):
                 if authenticate_user(email, password):
