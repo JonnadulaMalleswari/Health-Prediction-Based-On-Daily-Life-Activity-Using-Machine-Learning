@@ -28,8 +28,6 @@ def login_page():
     div[data-testid="column"] h1 {
         display: inline-block;
         font-size: 28px;
-        margin-bottom: 0;
-        margin-top: 0;
         vertical-align: middle;
     }
 
