@@ -21,10 +21,10 @@ def login_page():
     """,
     unsafe_allow_html=True
     )
-    col1,col2,col3 = st.columns([2,7,2])
+    col1,col2,col3 = st.columns([2,4,2])
     with col2.form(key="login_form"):
         # Title
-        col1,col2=st.columns([10,1])
+        col1,col2=st.columns([6,1])
         col1.title("Login Here !!!")
         if col2.form_submit_button("🏚️"):
             navigate_to_page("home")
@@ -33,7 +33,7 @@ def login_page():
         email = st.text_input("Email")
         password = st.text_input("Password", type="password")
         # Submit button inside the form
-        col1,col2,col3=st.columns([1,3,1])
+        col1,col2,col3=st.columns([1,2,1])
         with col1:
             if st.form_submit_button("Login 🔐",type='primary'):
                 if authenticate_user(email, password):
