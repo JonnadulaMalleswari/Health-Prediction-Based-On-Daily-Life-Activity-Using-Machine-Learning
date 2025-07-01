@@ -21,10 +21,10 @@ def login_page():
     """,
     unsafe_allow_html=True
     )
-    col1,col2,col3 = st.columns([2,4,2])
+    col1,col2,col3 = st.columns([2,5,1])
     with col2.form(key="login_form"):
         # Title
-        col1,col2=st.columns([6,1])
+        col1,col2=st.columns([5,2])
         col1.title("Login Here !!!")
         if col2.form_submit_button("🏚️"):
             navigate_to_page("home")
