@@ -3,7 +3,8 @@ This project uses Machine Learning to predict a person’s health risk level bas
 
 ## 🔗Live Demo
 
-👉 [![Click here to open the deployed Streamlit app](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://health-prediction-based-on-life-activity-using-machine-learning.streamlit.app/)
+
+👉[Click here to open the deployed Streamlit app](https://health-prediction-based-on-life-activity-using-machine-learning.streamlit.app/)
 
 
 ## 🧠Problem Statement
