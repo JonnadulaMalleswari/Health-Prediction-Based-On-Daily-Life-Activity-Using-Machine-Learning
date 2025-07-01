@@ -23,11 +23,6 @@ def login_page():
         width: 400px;
         margin: auto;
     }
-    
-    /* Align title and home icon */
-    div[data-testid="column"] h1 {
-        font-size: 28px;
-    }
 
     </style>
     """,
