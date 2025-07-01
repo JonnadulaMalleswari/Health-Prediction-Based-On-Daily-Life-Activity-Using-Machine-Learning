@@ -122,7 +122,7 @@ def user_home_page():
         <style>
         /* Apply background image to the main content area */
         .main {
-            background-image: url("https://t4.ftcdn.net/jpg/08/48/68/51/360_F_848685118_p6wvxhWl8ifQNWFVrOE7nkClJ66qV0cR.jpg");
+            background-image: url("https://www.freepik.com/free-vector/watercolor-medical-background_158887222.htm#fromView=keyword&page=1&position=15&uuid=095adff1-a769-4f63-a2fa-abae3145df15&query=Medical+Background");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
