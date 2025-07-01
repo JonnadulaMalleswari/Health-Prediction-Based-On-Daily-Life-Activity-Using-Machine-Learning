@@ -21,7 +21,7 @@ def login_page():
     """,
     unsafe_allow_html=True
     )
-    col1,col2,col3 = st.columns([2,4,2])
+    col1,col2,col3 = st.columns([2,7,2])
     with col2.form(key="login_form"):
         # Title
         col1,col2=st.columns([10,1])
