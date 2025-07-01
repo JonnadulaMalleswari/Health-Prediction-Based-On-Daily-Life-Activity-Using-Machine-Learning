@@ -1,6 +1,5 @@
---no-use-pep517
 streamlit==1.30.0
-pandas
+pandas==2.2.2
 streamlit_option_menu==0.3.6
 scikit-learn
 numpy
