@@ -40,7 +40,7 @@ def login_page():
     col1,col2,col3 = st.columns([2,4,2])
     with col2.form(key="login_form"):
         # Title
-        col1,col2=st.columns([5,2])
+        col1,col2=st.columns([7,1])
         col1.title("Login Here !!!")
         if col2.form_submit_button("🏚️"):
             navigate_to_page("home")
