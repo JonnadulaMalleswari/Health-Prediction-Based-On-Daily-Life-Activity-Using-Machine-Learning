@@ -17,7 +17,6 @@ def login_page():
 
     /* Tighter and centered login form */
     div[data-testid="stForm"] {
-        background-color: rgba(255, 255, 255, 0.85);
         padding: 2rem;
         border-radius: 15px;
         box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -56,9 +55,6 @@ def login_page():
     div[data-testid="stHorizontalBlock"] {
         gap: 0.5rem !important;
     }
-    div[data-testid="stForm"] * {
-    color: black !important;
-   }
     </style>
     """,
     
