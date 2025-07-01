@@ -35,7 +35,8 @@ def login_page():
         display: inline-block;
         vertical-align: middle;
         margin-top: 0.3rem;
-        height: 2.5rem;
+        margin-left:6px;
+        height: 2.0rem;
     }
 
     /* Input field spacing */
