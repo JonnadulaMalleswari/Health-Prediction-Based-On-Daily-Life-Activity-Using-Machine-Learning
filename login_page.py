@@ -25,6 +25,19 @@ def login_page():
         width: 400px;
         margin: auto;
     }
+      /* Align title and home icon */
+    h1 {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    button[kind="secondary"] {
+        vertical-align: middle;
+        padding: 0.3rem 0.6rem;
+        font-size: 1.2rem;
+    }
+
 
     /* Fix title and home button in one line */
     div[data-testid="column"] > div > h1 {
@@ -37,6 +50,10 @@ def login_page():
     .stForm button {
         width: 100%;
         margin-top: 0.5rem;
+    }
+    /* Make buttons full-width inside columns */
+    button[kind="primary"] {
+        width: 100%;
     }
 
     /* Align the two buttons side by side */
