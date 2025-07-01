@@ -5,7 +5,8 @@ def navigate_to_page(page_name):
     st.rerun()
 
 def login_page():
-        st.markdown(
+    
+    st.markdown(
     """
     <style>
     .main {
