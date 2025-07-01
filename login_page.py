@@ -5,8 +5,7 @@ def navigate_to_page(page_name):
     st.rerun()
 
 def login_page():
-    # Center the login form using Streamlit form layout
-   st.markdown(
+    st.markdown(
     """
     <style>
     /* Apply background image to main area */
