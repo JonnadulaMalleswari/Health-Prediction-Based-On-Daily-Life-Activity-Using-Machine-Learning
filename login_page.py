@@ -5,7 +5,6 @@ def navigate_to_page(page_name):
     st.rerun()
 
 def login_page():
-    
     st.markdown(
     """
     <style>
@@ -16,57 +15,54 @@ def login_page():
         background-repeat: no-repeat;
     }
 
-    /* Login form styling */
-    .stForm {
+    /* Tighter and centered login form */
+    div[data-testid="stForm"] {
         background-color: rgba(255, 255, 255, 0.85);
         padding: 2rem;
         border-radius: 15px;
         box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        width: 400px;
+        max-width: 500px;
         margin: auto;
     }
-      /* Align title and home icon */
-    h1 {
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 10px;
-    }
 
-    button[kind="secondary"] {
-        vertical-align: middle;
-        padding: 0.3rem 0.6rem;
-        font-size: 1.2rem;
-    }
-
-
-    /* Fix title and home button in one line */
-    div[data-testid="column"] > div > h1 {
+    /* Align title and home icon */
+    div[data-testid="column"] h1 {
         display: inline-block;
         font-size: 28px;
+        margin-bottom: 0;
+        margin-top: 0;
+        vertical-align: middle;
+    }
+
+    div[data-testid="column"] button {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 0.3rem;
+        margin-left: 10px;
+        height: 2.5rem;
+    }
+
+    /* Input field spacing */
+    .stTextInput {
         margin-bottom: 1rem;
     }
 
-    /* Align login and create account buttons */
-    .stForm button {
-        width: 100%;
-        margin-top: 0.5rem;
-    }
-    /* Make buttons full-width inside columns */
-    button[kind="primary"] {
+    /* Equal width buttons */
+    div[data-testid="column"] button[kind="primary"] {
         width: 100%;
     }
 
-    /* Align the two buttons side by side */
-    .stForm div.row-button-container {
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
+    /* Remove extra spacing between columns */
+    div[data-testid="stHorizontalBlock"] {
+        gap: 0.5rem !important;
     }
     </style>
     """,
     unsafe_allow_html=True
-    )
+)
 
+  
+    
     col1,col2,col3 = st.columns([2,5,1])
     with col2.form(key="login_form"):
         # Title
