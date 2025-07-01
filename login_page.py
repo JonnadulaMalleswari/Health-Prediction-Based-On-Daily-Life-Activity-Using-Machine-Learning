@@ -50,11 +50,6 @@ def login_page():
     div[data-testid="column"] button[kind="primary"] {
         width: 100%;
     }
-
-    /* Remove extra spacing between columns */
-    div[data-testid="stHorizontalBlock"] {
-        gap: 0.5rem !important;
-    }
     </style>
     """,
     
