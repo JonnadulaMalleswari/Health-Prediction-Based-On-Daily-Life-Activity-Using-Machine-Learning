@@ -35,7 +35,7 @@ def login_page():
         display: inline-block;
         vertical-align: middle;
         margin-top: 0.3rem;
-        margin-left:6px;
+        margin-left:2px;
         height: 2.0rem;
     }
 
