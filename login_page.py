@@ -12,7 +12,9 @@ def login_page():
     /* Apply background image to the main content area */
     .main {
         background-image: url("https://img.freepik.com/free-vector/medical-banner-with-healthcare-icons_1017-26805.jpg");
+        background-size:cover;
         background-position: center;
+        
         background-repeat: no-repeat;
     }
     </style>
