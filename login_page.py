@@ -31,22 +31,6 @@ def login_page():
         vertical-align: middle;
     }
 
-    div[data-testid="column"] button {
-        display: inline-block;
-        vertical-align: middle;
-        margin-top: 0.3rem;
-        margin-left:7px;
-        }
-
-    /* Input field spacing */
-    .stTextInput {
-        margin-bottom: 1rem;
-    }
-
-    /* Equal width buttons */
-    div[data-testid="column"] button[kind="primary"] {
-        width: 100%;
-    }
     </style>
     """,
     
