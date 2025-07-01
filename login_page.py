@@ -6,21 +6,49 @@ def navigate_to_page(page_name):
 
 def login_page():
     # Center the login form using Streamlit form layout
-    st.markdown(
+   st.markdown(
     """
     <style>
-    /* Apply background image to the main content area */
+    /* Apply background image to main area */
     .main {
         background-image: url("https://img.freepik.com/free-vector/medical-banner-with-healthcare-icons_1017-26805.jpg");
-        background-size:cover;
+        background-size: cover;
         background-position: center;
-        
         background-repeat: no-repeat;
+    }
+
+    /* Style the login form box */
+    div[data-testid="stForm"] {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        max-width: 400px;
+        margin: auto;
+    }
+
+    /* Center the form inside the container */
+    section.main > div {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Adjust form title and home button */
+    .form-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Style form inputs and buttons for consistency */
+    input, button {
+        font-size: 16px !important;
     }
     </style>
     """,
     unsafe_allow_html=True
-    )
+)
+
     col1,col2,col3 = st.columns([2,5,1])
     with col2.form(key="login_form"):
         # Title
@@ -33,7 +61,7 @@ def login_page():
         email = st.text_input("Email")
         password = st.text_input("Password", type="password")
         # Submit button inside the form
-        col1,col2,col3=st.columns([1,2,1])
+        col1,col2=st.columns([1,1])
         with col1:
             if st.form_submit_button("Login 🔐",type='primary'):
                 if authenticate_user(email, password):
@@ -44,6 +72,6 @@ def login_page():
                     navigate_to_page("user_home")
                 else:
                     st.error("Invalid email or password.")
-        with col3:
+        with col2:
             if st.form_submit_button("Create account👤",type='primary'):
                 navigate_to_page("signup")
