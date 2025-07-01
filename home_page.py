@@ -11,7 +11,7 @@ def home_page():
     <style>
     /* Apply background image to the main content area */
     .main {
-        background-image: url("https://i.pinimg.com/736x/20/0b/98/200b9847bbf2b353a12a9b41c6f7c536.jpg");  
+        background-image: url("https://img.freepik.com/free-vector/medical-healthcare-blue-color_1017-26807.jpg");  
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
