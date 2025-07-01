@@ -56,8 +56,12 @@ def login_page():
     div[data-testid="stHorizontalBlock"] {
         gap: 0.5rem !important;
     }
+    div[data-testid="stForm"] * {
+    color: black !important;
+   }
     </style>
     """,
+    
     unsafe_allow_html=True
 )
 
