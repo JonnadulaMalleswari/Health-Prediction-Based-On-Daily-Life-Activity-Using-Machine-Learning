@@ -5,10 +5,9 @@ def navigate_to_page(page_name):
     st.rerun()
 
 def login_page():
-    st.markdown(
+        st.markdown(
     """
     <style>
-    /* Apply background image to main area */
     .main {
         background-image: url("https://img.freepik.com/free-vector/medical-banner-with-healthcare-icons_1017-26805.jpg");
         background-size: cover;
@@ -16,37 +15,39 @@ def login_page():
         background-repeat: no-repeat;
     }
 
-    /* Style the login form box */
-    div[data-testid="stForm"] {
-        background: rgba(255, 255, 255, 0.95);
+    /* Login form styling */
+    .stForm {
+        background-color: rgba(255, 255, 255, 0.85);
         padding: 2rem;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        max-width: 400px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        width: 400px;
         margin: auto;
     }
 
-    /* Center the form inside the container */
-    section.main > div {
-        display: flex;
-        justify-content: center;
+    /* Fix title and home button in one line */
+    div[data-testid="column"] > div > h1 {
+        display: inline-block;
+        font-size: 28px;
+        margin-bottom: 1rem;
     }
 
-    /* Adjust form title and home button */
-    .form-title {
+    /* Align login and create account buttons */
+    .stForm button {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    /* Align the two buttons side by side */
+    .stForm div.row-button-container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-    }
-
-    /* Style form inputs and buttons for consistency */
-    input, button {
-        font-size: 16px !important;
+        gap: 1rem;
     }
     </style>
     """,
     unsafe_allow_html=True
-)
+    )
 
     col1,col2,col3 = st.columns([2,5,1])
     with col2.form(key="login_form"):
