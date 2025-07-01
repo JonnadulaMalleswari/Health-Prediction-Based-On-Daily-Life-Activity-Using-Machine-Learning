@@ -23,11 +23,18 @@ def login_page():
         width: 400px;
         margin: auto;
     }
+    
+    /* Align title and home icon */
+    div[data-testid="column"] h1 {
+        display: inline-block;
+        font-size: 28px;
+        vertical-align: middle;
+    }
+
     div[data-testid="column"] button {
         display: inline-block;
         vertical-align: middle;
         margin-top: 0.3rem;
-        margin-left: 10px;
         height: 2.5rem;
     }
 
@@ -51,7 +58,7 @@ def login_page():
     col1,col2,col3 = st.columns([2,5,1])
     with col2.form(key="login_form"):
         # Title
-        col1,col2=st.columns([5,2])
+        col1,col2=st.columns([5,3])
         col1.title("Login Here !!!")
         if col2.form_submit_button("🏚️"):
             navigate_to_page("home")
