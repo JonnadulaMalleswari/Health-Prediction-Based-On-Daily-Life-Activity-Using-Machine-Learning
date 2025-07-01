@@ -75,7 +75,7 @@ def login_page():
         email = st.text_input("Email")
         password = st.text_input("Password", type="password")
         # Submit button inside the form
-        col1,col2=st.columns([1,1])
+        col1,col2=st.columns([1,2])
         with col1:
             if st.form_submit_button("Login 🔐",type='primary'):
                 if authenticate_user(email, password):
