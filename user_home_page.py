@@ -15,7 +15,7 @@ def user_home_page():
     user = fetch_user(st.session_state["current_user"])
     with st.sidebar:
         st.markdown(f"<h1 style='text-align: center;'>𝐖𝐄𝐋𝐂𝐎𝐌𝐄 👋 {user[1]}</h1>", unsafe_allow_html=True)
-        st.image('https://cdni.iconscout.com/illustration/premium/thumb/doctor-welcoming-with-namaste-hand-gesture-illustration-download-in-svg-png-gif-file-formats--pack-healthcare-medical-illustrations-2215045.png', use_container_width=True)
+        st.image('https://cdni.iconscout.com/illustration/premium/thumb/doctor-welcoming-with-namaste-hand-gesture-illustration-download-in-svg-png-gif-file-formats--pack-healthcare-medical-illustrations-2215045.png')
         select = option_menu(
             "",
             ["Patient Profile",'Daily Updates', 'Analytics',"Statistics","Logout"],
